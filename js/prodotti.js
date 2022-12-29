@@ -12,10 +12,12 @@ export default {
     template: `
 <div class="container-d-flex">
     <div class="row mb-0">
-        <i class="bi-gear-wide-connected text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        <div class="col-11 text-center">
+            <i class="bi-gear-wide-connected text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        </div>
     </div>
     <div class="row fs-6 mb-4">
-        <div class="col col-lg-1">
+        <div class="col col-lg-2 align-self-center">
             <img src="img/mapod_new_render_scontornato.png" class="img-fluid" style="width: 200px;" alt="MAPOD4D">
         </div>
         <div class="col-md-auto"></div>
@@ -33,7 +35,7 @@ export default {
         </div>
     </div>
     <div class="row fs-6 mb-4">
-        <div class="col col-lg-1">
+        <div class="col col-lg-2 align-self-center">
             <img src="img/sistemista.jpg" class="img-fluid" style="width: 200px; border: solid 1px;" alt="MAPOD4D">
         </div>
         <div class="col-md-auto"></div>
@@ -48,7 +50,7 @@ export default {
         </div>
     </div>
     <div class="row fs-6 mb-4">
-        <div class="col col-lg-1">
+        <div class="col col-lg-2 align-self-center">
             <img src="img/progettista.jpg" class="img-fluid" style="width: 200px; border: solid 1px;" alt="MAPOD4D">
         </div>
         <div class="col-md-auto"></div>
@@ -66,7 +68,7 @@ export default {
         </div>
     </div>
     <div class="row fs-6 mb-3">
-        <div class="col col-lg-1">
+        <div class="col col-lg-2 align-self-center">
             <img src="img/aut_felice.jpg" class="img-fluid" style="width: 200px; border: solid 1px;" alt="MAPOD4D">
         </div>
         <div class="col-md-auto"></div>

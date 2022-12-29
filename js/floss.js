@@ -11,7 +11,9 @@ export default {
     template: `
 <div class="container-d-flex">
     <div class="row mb-0">
-        <i class="bi-file-binary text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        <div class="col-11 text-center">
+            <i class="bi-file-binary text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        </div>
     </div>
     <div class="row fs-6 mb-4">
         <div class="col col-lg-9">
@@ -43,7 +45,7 @@ export default {
        
         </div>
         <div class="col-md-auto"></div>
-        <div class="col col-lg-1">
+        <div class="col col-lg-2 text-end">
             <figure class="figure">
                 <img src="img/gg3po-newGnu-medium.png" class="img-fluid" style="width: 200px;" alt="GNU">
                 <figcaption class="figure-caption text-psl fs-6"><b>GNU <a href="https://www.gnu.org/" target="_blank">website</a>.</b></figcaption>
