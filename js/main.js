@@ -1,13 +1,20 @@
-import Hello from './hello.js'
+import Home from './home.js'
+import Prodotti from './prodotti.js'
+import Floss from './floss.js'
+import Assistenza from './assistenza.js'
+import ChiSiamo from './chisiamo.js'
+import Privacy from './privacy.js'
 
 const { createApp } = Vue;
 
-const Home = { template: '<div>Home</div>' };
-const About = { template: '<div>About</div>' };
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/about', component: About },
+    { path: '/prodotti', component: Prodotti },
+    { path: '/software', component: Floss },
+    { path: '/assistenza', component: Assistenza },
+    { path: '/chisiamo', component: ChiSiamo },
+    { path: '/privacy', component: Privacy },
 ];
 
 const router = VueRouter.createRouter({
@@ -18,28 +25,11 @@ const router = VueRouter.createRouter({
 const app = createApp({
     data() {
         return {
-            user: "d",
-            conta: 0,
         };
     },
-    methods: {
-        incConta() {
-            this.conta += 1;
-        } 
-    },
-    components: {
-        Hello
-    }
 });
 
 app.use(router);
 
-/*
-app.component('hello',  {
-    template: `
-            <p>hhh</p>
-    `
-});
-*/
 
 const mountedApp = app.mount("#app");

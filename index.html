@@ -2,23 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PSL - Leicon di Serenella Saccon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .general-psl { 
+            /*
+            --rt-margin: 5.0rem;
+            margin-right: var(--rt-margin);
+            margin-left: var(--rt-margin);
+            */
+            background: #F0F0F0; 
+        }
+        .cookie-psl {
+            color: #3F7EBE;
+        }
+        .foother-psl {
+            background: #3D3C3F;
+        }
+        .logo-psl { 
+            background: #F0F0F0; 
+            /*border: solid 1px;*/
+            border-radius: 10px;
+        }
+        .nav-psl { 
+            background: #E0E0E0; 
+        }
+        .text-psl { 
+            color: #3F7EBE !important; 
+        }
+        .top-icons-psl { 
+            color: #3F7EBE !important; 
+        }
+        .nav-link-psl { 
+            /*background-color: #9FDEFE;*/
+            border-radius: 4px;
+            border-left: solid 1px;
+            border-right: solid 1px;
+            border: solid 1px;
+            border-color: #D0D0D0;
+        }
+        .navbar-nav {
+            --bs-navbar-active-color: #3F7EBE;
+            
+        }
+        .active {
+            font-weight: bold;
+        }
+        
+        @media (min-width: 1055.98px) { 
+            /*.general-psl { background: yellow;  }*/
+            .navbar {
+                --bs-navbar-brand-padding-y: 0.2rem;
+            }
+            .nav-link {
+                --bs-nav-link-font-size: 1.2rem;
+            }
+            .motto-psl {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 1199.99px) { 
+            /*.general-psl { background: blue;  }*/
+            .navbar {
+                --bs-navbar-brand-font-size: 1.5rem;
+                --bs-navbar-brand-padding-y: 0.2rem;
+            }
+            .nav-link {
+                --bs-nav-link-font-size: 1.5rem;
+            }
+            .motto-psl {
+                font-size: 2.0rem;
+            }
+        }
+        
+    </style>
 </head>
-<body>
-    <div id="app">
-        <hello></hello>
-        <div>{{user}}</div>
-        <button @click="incConta">incrementa</button>
-        <div>{{conta}}</div>
-        <p>
-            <router-link to="/">Go to Home</router-link>
-            <router-link to="/about">Go About</router-link>
-        </p>
-        <router-view></router-view>
+<body class="general-psl">
+    <div class="container-d-flex mb-0 mt-0 mbs-5 me-5 text-center fs-5 cookie-psl"><b>Questo sito non utilizza alcun tipo di cookie.</b></div>
+    <div class="container-d-flex mt-2 ms-5 me-5 content-psl" id="app">
+        <nav class="navbar navbar-expand-lg nav-psl mb-2">
+            <div class="container-fluid">
+                <div class="navbar-brand logo-psl p-2" href="#">
+                    <div class="d-flex align-items-end">
+                      <img src="img/logol.png" alt="logo progettosl" width="150">
+                      <span class="text-psl ms-1"><b>Expert Included</b></span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>               
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="navbar-nav">
+                        <router-link id="mn0" class="nav-item nav-link" to="/"><div class="nav-link-psl">Home</div></router-link>
+                        <router-link id="mn1" class="nav-item nav-link" to="/prodotti"><div class="nav-link-psl">Prodotti&nbsp;e&nbsp;servizi</div></router-link>
+                        <router-link id="mn2" class="nav-item nav-link" to="/software"><div class="nav-link-psl">Il&nbsp;Software&nbsp;FLOSS</div></router-link>
+                        <router-link id="mn3" class="nav-item nav-link" to="/assistenza"><div class="nav-link-psl">Assistenza</div></router-link>
+                        <router-link id="mn4" class="nav-item nav-link" to="/chisiamo"><div class="nav-link-psl">Chi&nbsp;siamo</div></router-link>
+                        <router-link id="mn5" class="nav-item nav-link" to="/privacy"><div class="nav-link-psl">Privacy</div></router-link>
+                    </div>
+                </div>
+            </div>
+        </nav>
+   <main>
+        <div class="container-d-flex">
+            <router-view></router-view>
+        </div>
+</main>
+
+<div class="container-d-flex">
+    <div class="row mb-0">
+        <i class="bi-file-binary text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
     </div>
+    <div class="row fs-6 mb-4">
+        <div class="col col-lg-9">
+            <p class="text-psl fs-3"><b>Cosa significa FLOSS</b></p>
+            <p>L' acronimo <b>FLOSS</b> per esteso si legge <b>"Free Libre and Open Source Software"</b>.</p>
+
+            <p>Questo acronimo viene utilizzato per raggruppare il <b>software</b> libero e Open Source in un'unica categoria (<b>libero non significa necessariamente GRATUITO</b>). Per essere "libero" il software deve soddisfare quattro vincoli di <b>libertà</b>, eccoli in breve:</p>
+            <ul>
+                <li>Libertà di <b>eseguire</b> il software per qualunque scopo</li>
+                <li>Libertà di <b>studiare</b> il software e modificarlo in base alle proprie necessità</li>
+                <li>Libertà di <b>ridistribuire</b> il software</li>
+                <li>Libertà di <b>migliorare</b> il software e di distribuirne i miglioramenti</li>
+            </ul>
+
+            <p>Il software Open Source non è sempre "libero" e prima di adottarlo occorre <b>leggere la licenza</b> d'uso e approfondirne gli eventuali vincoli. In generale, comunque, la maggioranza del software Open Source è anche software "libero". Il software FLOSS è particolarmente sicuro in quanto il <b>codice sorgente</b> disponibile permette ad una motlitudine di sviluppatori la correzione di bug e falle di sicurezza.</p>
+
+            <p>Gli sviluppatori che si occupano si software FLOSS sono spesso riuniti in gruppi detti <b>"community"</b> che lavorano coordinando le proprie attività.</p>
+
+            <p>I <b>vantaggi</b> dell'adozione dei prodotti FLOSS in breve sono:</p>
+            <ul>
+                <li>È <b>adattabile</b> alle proprie esigenze</li>
+                <li>È <b>sicuro</b> perchè revisionabile da una moltitudine di sviluppatori</li>
+                <li>Le problematiche, quali bug e malfunzionamenti, sono <b>pubbliche</b> così che gli utenti possano esserne sempre a conoscenza</li>
+                <li>Ha un <b>formato aperto</b> è quindi più semplice farlo interagire con altri software</li>
+                <li>Contribuisce alla creazione di <b>nuovi posti di lavoro</b> specializzati in quanto richiede la consulenza di professionisti preparati</li>
+                <li><b>Riduce il divario digitale</b> perchè è accessibile anche a chi non ha grandi disponibilità economiche</li>
+                <li>Permette a tutti di contribuire al <b>miglioramento</b> delle applicazioni. Chi non ha specifiche competenze tecniche può contribuire, ad esempio, con: traduzioni, collaudi, o piccole donazioni</li>
+            </ul>
+       
+        </div>
+        <div class="col-md-auto"></div>
+        <div class="col col-lg-1">
+            <figure class="figure">
+                <img src="img/gg3po-newGnu-medium.png" class="img-fluid" style="width: 200px;" alt="GNU">
+                <figcaption class="figure-caption text-psl fs-6"><b>GNU <a href="https://www.gnu.org/" target="_blank">website</a>.</b></figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="img/OSI_Standard_Logo_100X130.png" class="img-fluid" style="width: 200px;" alt="OSI">
+                <figcaption class="figure-caption text-psl fs-6"><b>OSI <a href="https://opensource.org/" target="_blank">website</a>.</b></figcaption>
+            </figure>
+            
+        </div>
+
+
+
+
+</div>
+ 
+       
+       
+        <div class="container-d-flex mt-0 mb-1 pt-3 foother-psl">
+            <div class="row justify-content-evenly">
+                <div class="col col-lg-4">
+                    <p class="text-center text-light fs-4 mb-0 mt-2">AZIENDA</p>
+                    <div class="text-center"><hr class="border border-1"></div>
+                    <p class="text-white fs-5 mb-0 ms-1 me-1"><i class="bi-gear-fill fs-5"></i> Progettosl&nbsp;-&nbsp;LEICON di&nbsp;Serenella&nbsp;Saccon</p>
+                    <p class="text-light fs-6 mb-1 mt-1 ms-1 me-1"><i class="bi-info-circle-fill fs-5"></i> P.IVA&nbsp;IT02685800126 REA&nbsp;277881 C&nbsp;F&nbsp;SCCSNL73H48L682L</p>
+                    <p class="text-light fs-6 mb-5 mt-1 ms-1 me-1"><i class="bi-geo-alt-fill fs-5"></i> Via Delle Cascine 38, 21041 Albizzate (VARESE) Italy<br></p>
+                </div>
+                <div class="col-md-auto"></div>
+                <div class="col col-lg-4">
+                    <p class="text-center text-light fs-4 mb-0 mt-2">CONTATTI</p>
+                    <div class="text-center"><hr class="border border-1"></div>
+                    <p class="text-light fs-5 mb-1 mt-1 ms-1 me-1"><i class="bi-telephone-fill fs-5"></i> (+39)&nbsp;0331&nbsp;99&nbsp;36&nbsp;10</p>
+                    <p class="text-light fs-5 mb-1 mt-1 ms-1 me-1"><i class="bi-phone-fill fs-5"></i> (mobile)&nbsp;331&nbsp;577&nbsp;6186</p>
+                    <p class="text-light fs-5 mb-5 mt-1 ms-1 me-1"><i class="bi-envelope-at-fill fs-5"></i> r.taglioretti@progettosl.eu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
-    <!--<script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script> -->
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
