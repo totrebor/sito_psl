@@ -2,6 +2,7 @@
 export default {
     beforeMount() {
         console.log("beforeMount");
+        document.documentElement.scrollTop = 0;
         document.getElementById("mn3").classList.add('active');
     },
     beforeUnmount() {
@@ -11,13 +12,13 @@ export default {
     template: `
 <div class="container-d-flex">
     <div class="row mb-0">
-        <div class="col-12 text-center">
-            <i class="bi-wrench-adjustable text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        <div class="col-11 text-center">
+            <i class="bi-wrench-adjustable top-icons-psl"></i>
         </div>
     </div>
     <div class="row fs-4 mb-4">
-        <div class="col-12">
-            <p class="text-psl fs-3"><b>Download Software assistenza remota</b></p>
+        <div class="col-11">
+            <p class="fs-3 title-text-psl"><b>Download Software assistenza remota</b></p>
             <p>Piattaforma <b>Microsoft Windows</b> <a href="https://logins.livecare.net/liveletexecustomunified/0G7BJV5WM7SVPJ1Z" target="_blank">DOWNLOAD</a></p>
             <p>Piattaforma <b>OSX</b> <a href="https://www.progettosl.eu/support/livelet160000.dmg" target="_blank">DOWNLOAD</a></p>
             <p class="text-psl fs-3 mt-5"><b>Download Software assistenza remota DWS</b></p>

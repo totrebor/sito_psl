@@ -2,6 +2,7 @@
 export default {
     beforeMount() {
         console.log("beforeMount");
+        document.documentElement.scrollTop = 0;
         document.getElementById("mn4").classList.add('active');
     },
     beforeUnmount() {
@@ -11,13 +12,13 @@ export default {
     template: `
 <div class="container-d-flex">
     <div class="row mb-0">
-        <div class="col-12 text-center">
-            <i class="bi-buildings text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+        <div class="col-11 text-center">
+            <i class="bi-buildings top-icons-psl"></i>
         </div>
     </div>
     <div class="row fs-6 mb-4">
-        <div class="col-12">
-            <p class="text-psl fs-3"><b>Una rete di professionisti</b></p>
+        <div class="col-11">
+            <p class="fs-3 title-text-psl"><b>Una rete di professionisti</b></p>
             <p>Il gruppo nasce nel 2013 a seguito di un accordo tra <b>LEICON di Serenella Saccon</b> e <b>Softel di Ferrario Giorgio</b>.</p>
             <p>Spinte dalla richiesta di <b>consulenza specialistica</b> le due strutture hanno costruito la <b>rete di imprese</b> collegando ad essa le competenze di una variegata rete di consulenti.</p>
             <p>L'obbiettivo è quello di costruire ogni servizio scomponendolo in <b>specifici compiti specialistici</b> che vengono poi affidati al singolo professionista che può dedicarsi così alla propria naturale attività.</p>
@@ -31,8 +32,8 @@ export default {
             <img src="img/logo_leicon.jpg" class="img-fluid" style="width: 200px; border: solid 1px;" alt="LEICON di Serenella Saccon">
         </div>
         <div class="col-md-auto"></div>
-        <div class="col col-lg-10">
-            <p class="text-psl fs-3"><b>LEICON di Serenella Saccon</b></p>
+        <div class="col col-lg-9">
+            <p class="fs-3 title-text-psl"><b>LEICON di Serenella Saccon</b></p>
             <p>Leicon <b>nasce nel 2001</b> fondendo competenze inerenti la <b>consulenza giuridica informatica</b>, lo sviluppo di software, la fornitura di software e hardware, la fornitura di servizi e avvalendosi dell'operato di personale tecnico di provata esperienza. Durante gli anni successivi acquisice l'<b>importazione e la distribuzione di software</b>, in particolare in qualità di distributore sul territorio italiano del software <b>antivirus F-Prot</b>, tramite la rete di rivenditori presenti su tutto il territorio italiano.</p>
             <ul>
                 <li><b>2001</b> fondazione ad opera della <b>Dottoressa Serenella Saccon</b>;</li>

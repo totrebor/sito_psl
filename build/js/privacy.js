@@ -2,6 +2,7 @@
 export default {
     beforeMount() {
         console.log("beforeMount");
+        document.documentElement.scrollTop = 0;
         document.getElementById("mn5").classList.add('active');
     },
     beforeUnmount() {
@@ -11,14 +12,14 @@ export default {
     template: `
 <div class="container-d-flex">
     <div class="row mb-0">
-       <div class="col-12 text-center">
-            <i class="bi-shield" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+       <div class="col-11 text-center">
+            <i class="bi-shield top-icons-psl"></i>
        </div>
     </div>
     <div class="row fs-6 mb-4">
-       <div class="col-12">
-            <p class="text-psl fs-3"><b>Informativa</b></p>
-            <p>Informativa sul trattamento dati ai sensi dell’art. 13 D.Lgs. 196/2003 (Codice Privacy) e dell’art. 13 Regolamento UE n. 2016/679 (GDPR) Progettosl rete di imprese, in qualità di titolare del trattamento, informa tutti gli interessati in merito alle modalità e alle finalità del trattamento dei dati.</p>
+       <div class="col-11">
+            <p class="fs-3 title-text-psl"><b>Informativa</b></p>
+            <p>Informativa sul trattamento dati ai sensi dell’art. 13 D.Lgs. 196/2003 (Codice Privacy) e dell’art. 13 Regolamento UE n. 2016/679 (GDPR) Progettosl - LEICON di Serenella Saccon, in qualità di titolare del trattamento, informa tutti gli interessati in merito alle modalità e alle finalità del trattamento dei dati.</p>
             <p>Saranno trattati dati personali come identificati all'art. 4 GDPR, ad esempio dati anagrafici e necessari ai contatti e alla fatturazione riferibili ad aziende e al personale che vi opera e dati riservati inerenti configurazioni, credenziali, progetti.</p>
             <p>Il Trattamento dei dati è necessario per la realizzazione dei servizi richiesti e per gli adempimenti previsti dalla normativa vigente. Viene effettuato ai sensi dell'art. 6 lett. a GDPR sulla base del consenso e ai sensi dell'art. 24 lett. a, b, c Codice Privacy e dell'art. 6 lett. b, e GDPR per le seguenti finalità:</p>
             <ul>
@@ -62,10 +63,10 @@ export default {
         </div>
     </div>
     <div class="row fs-6 mb-4">
-    <p class="text-psl fs-3"><b>Coockies</b></p>
+    <p class="fs-3 title-text-psl"><b>Cookies</b></p>
         <div class="col-12">
             <ul>
-                <li>Premesse Progettosl rete di imprese, con sede legale in via delle cascine 38 in Albizzate VA, in qualità di titolare del trattamento dei dati (“Titolare”), pubblica la seguente Cookie Policy, informativa per il trattamento dei cookie utilizzati dal sito Internet raggiungibile all’URL: http://www.progettosl.eu (“Sito”). Per tutto quanto non previsto dalla Cookie Policy si rinvia all'informativa in materia di trattamento dati. Utilizzando il sito l'utente accetta che vengano installati sul suo dispositivo i cookie "proprietari" e "di terze parti" indicati di seguito. Disabilitando tutti o alcuni cookie, alcune funzionalità del sito potrebbero non operare correttamente.</li>
+                <li>Premesse Progettosl - LEICON di Serenella Saccon, con sede legale in via delle cascine 38 in Albizzate VA, in qualità di titolare del trattamento dei dati (“Titolare”), pubblica la seguente Cookie Policy, informativa per il trattamento dei cookie utilizzati dal sito Internet raggiungibile all’URL: http://www.progettosl.eu (“Sito”). Per tutto quanto non previsto dalla Cookie Policy si rinvia all'informativa in materia di trattamento dati. Utilizzando il sito l'utente accetta che vengano installati sul suo dispositivo i cookie "proprietari" e "di terze parti" indicati di seguito. Disabilitando tutti o alcuni cookie, alcune funzionalità del sito potrebbero non operare correttamente.</li>
                 <li>Definizioni Navigatore: qualsiasi soggetto che naviga sul Sito e che può usufruire dei servizi offerti dal Titolare. Cookie: per cookie si intende un file composto da una singola riga di testo, che può essere memorizzato temporaneamente nella memoria del computer del Navigatore (cookie “di sessione” o “temporaneo”) e posizionato nell’hard drive tramite il server di una pagina web (cookie “persistenti” o “di lunga durata”). Cookie di prima parte o proprietari: file che vengono installati sul dispositivo dell'utente direttamente dal sito che sta visitando. Cookie di terza parte: file che vengono installati da siti esterni, attraverso codice integrato nella pagine del sito che si sta visitando. Sono esempi di cookie di terze parti quelli installati dai plugin social (per la condivisione dei contenuti) oppure i cookie di analisi delle visite. Cookie tecnici: sono necessari per il corretto funzionamento del sito, ad esempio per tenere traccia dell'autenticazione effettuata da un utente, non raccolgono nessuna informazione personale. Cookie di funzionalità: sono essenzialmente cookie tecnici, utilizzati per memorizzare scelte (ad esempio la lingua) o riproporre testi in form da compilare. Questo tipo di cookie può coinvolgere informazioni personali ma senza di essi le funzionalità del sito possono non operare correttamente. Cookie di performance: sono essenzialmente cookie tecnici, utilizzati per raccogliere informazioni che non riguardano l'utente come persona ma le modalità di navigazione, allo scopo di migliorare le prestazioni del sito. I dati sono raccolti in forma aggregata e anonima da strumenti automatici di analisi. In genere la loro disattivazione non compromette le funzionalità del sito. Cookie social: l'utilizzo di funzionalità o collegamenti ad alcuni social network (ad esempio Facebook, Twitter, YouTube, Google Maps, ecc.) implica che siano installati cookie (di terze parti). La disattivazione non compromette le funzionalità del sito, ma può rendere inutilizzabili le funzioni o i collegamenti di riferimento. Cookie di profilazione: vengono installati per raccogliere informazioni inerenti le preferenze dell'utente e mostrare quindi contenuti coerenti. Possono memorizzare elementi della navigazione effettuata su altri siti. In genere vengono rilevati l'indirizzo IP dell'utente e informazioni che possono riguardare la persona e le sue preferenze. Google Analytics: servizio di analisi web fornito dalla società Google Inc. (“Google”), il servizio raccoglie dati in forma anonima per consentire il miglioramento delle prestazioni del sito.</li>
                 <li>Modalità del trattamento
                     <ul>
@@ -96,7 +97,7 @@ export default {
     </div>
     <div class="row fs-6 mb-4">
         <div class="col-12">
-            <p class="text-psl fs-3"><b>Tabella cookie</b></p>
+            <p class="fs-3 title-text-psl"><b>Tabella cookie</b></p>
             <p>Significato delle sigle tipo: <strong>T</strong> cookie tecnico, <strong>P</strong> di profilazione, <strong>PT</strong> di profilazione di terzi.<br />Significato delle sigle durata: <strong>G</strong> durata fino a 1 giorno, <strong>S</strong> durata oltre il giorno fino ad una settimana, <strong>O</strong> durata oltre la settimana fino a un mese, <strong>A(durata)</strong> altra durata indicata, <strong>N</strong> durata non nota.<br /> Formato della lista: riga <strong>1</strong> "<strong>nome</strong>" del cookie (sfondo giallo), riga <strong>2</strong> "<strong>dominio</strong>" del cookie, riga <strong>3</strong> "<strong>tipo</strong>" e "<strong>durata</strong>" del cookie, riga <strong>4</strong> "<strong>descrizione</strong>" del cookie.</p>
             <p class="fs-1">QUESTO SITO NON FA USO DI COCKIES</p>
         </div>

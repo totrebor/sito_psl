@@ -3,6 +3,7 @@
 export default {
     beforeMount() {
         console.log("beforeMount");
+        document.documentElement.scrollTop = 0;
         document.getElementById("mn1").classList.add('active');
     },
     beforeUnmount() {
@@ -13,7 +14,7 @@ export default {
 <div class="container-d-flex">
     <div class="row mb-0">
         <div class="col-11 text-center">
-            <i class="bi-gear-wide-connected text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+            <i class="bi-gear-wide-connected top-icons-psl"></i>
         </div>
     </div>
     <div class="row fs-6 mb-4">
@@ -22,7 +23,7 @@ export default {
         </div>
         <div class="col-md-auto"></div>
         <div class="col col-lg-9">
-            <p class="text-psl fs-3"><b>Software FLOSS su misura</b></p>
+            <p class="fs-3 title-text-psl"><b>Software FLOSS su misura</b></p>
             
             <p>L'esigenza di <b>costruire o adattare software FLOSS</b> alle proprie necessità richiede una complessa pianificazione e la comprensione delle regole che riguardano il mondo del "software libero".</p>
             
@@ -40,7 +41,7 @@ export default {
         </div>
         <div class="col-md-auto"></div>
         <div class="col col-lg-9">
-            <p class="text-psl fs-3"><b>Gestione delle reti basate su software FLOSS</b></p>
+            <p class="fs-3 title-text-psl"><b>Gestione delle reti basate su software FLOSS</b></p>
 
             <p>La gestione dell'infrastruttura di rete esistente, basata su software FLOSS dall'<b>installazione alla manutenzione</b>, è un'attività che garantisce la <b>sicurezza</b> e la longevità delle infrastrutture di rete.</p>
 
@@ -55,7 +56,7 @@ export default {
         </div>
         <div class="col-md-auto"></div>
         <div class="col col-lg-9">
-            <p class="text-psl fs-3"><b>Conversione infrastrutture di rete ai prodotti FLOSS</b></p>
+            <p class="fs-3 title-text-psl"><b>Conversione infrastrutture di rete ai prodotti FLOSS</b></p>
             <p>Il processo di conversione dell'infrastruttura di rete, realizzata con prodotti commerciali in una basata su prodotti FLOSS richiede una puntuale <b>analisi</b> delle esigenze e la definizione di una serie di <b>passi programmati</b> per raggiungere l'<b>obiettivo</b>. La fase analitica generalmente prevede l'attività di <b>"software selection"</b> e eventualmente quella di <b>"hardware selection"</b>.</p>
 
             <p>La "software selection" FLOSS è realizzata attraverso l'<b>esame dei prodotti</b> software disponibili in modo tale che possano garantire la soddisfazione di un'esigenza con la <b>garanzia</b> di durata ed efficienza e il <b>minimo costo</b>. Oltre a prendere in esame i prodotti, le valutazioni vengono effettuate misurando anche specifici parametri legati alle <b>community</b> che li producono ottenendo alla fine una stima confrontabile che permette di fare una scelta <b>consapevole</b>.</p>
@@ -73,7 +74,7 @@ export default {
         </div>
         <div class="col-md-auto"></div>
         <div class="col col-lg-9">
-            <p class="text-psl fs-3"><b>Supporto informatico per i lavoratori autonomi</b></p>
+            <p class="fs-3 title-text-psl"><b>Supporto informatico per i lavoratori autonomi</b></p>
             <p>Con l'adozione di un approccio che preveda l'uso dei software FLOSS, il professionista di ogni settore <b>abbraccia</b> una nuova filosofia che gli permette di <b>ridurre i costi</b> di avvio e di gestione dei propri strumenti informatici. Tendenzialmente, i prodotti FLOSS possono essere utilizzati su dispositivi più datati e permettono anche di <b>ridurre</b> il numero di cicli di sostituzione dell'hardware a parità di tempo trascorso.</p>
 
             <p>Le attività dedicate ai professionisti prevedono pacchetti di <b>consulenza</b>, servizi, software commerciali (qualora i prodotti FLOSS non soddisfino i requisiti) e hardware per avere un prodotto costruito a propria misura che supplisca a tutte le necessità. Avviata la propria attività si può optare per uno specifico <b>piano di assistenza</b> che permette il supporto continuo (tramite software automatici di sorveglianza) con la prevenzione e risoluzione delle criticità.</p>

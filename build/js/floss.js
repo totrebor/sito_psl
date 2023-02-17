@@ -2,6 +2,7 @@
 export default {
     beforeMount() {
         console.log("beforeMount");
+        document.documentElement.scrollTop = 0;
         document.getElementById("mn2").classList.add('active');
     },
     beforeUnmount() {
@@ -12,12 +13,12 @@ export default {
 <div class="container-d-flex">
     <div class="row mb-0">
         <div class="col-11 text-center">
-            <i class="bi-file-binary text-center" style="font-size: 4.0rem; color: #3F7EBE;"></i>
+            <i class="bi-file-binary top-icons-psl"></i>
         </div>
     </div>
     <div class="row fs-6 mb-4">
         <div class="col col-lg-9">
-            <p class="text-psl fs-3"><b>Cosa significa FLOSS</b></p>
+            <p class="fs-3 title-text-psl"><b>Cosa significa FLOSS</b></p>
             <p>L' acronimo <b>FLOSS</b> per esteso si legge <b>"Free Libre and Open Source Software"</b>.</p>
 
             <p>Questo acronimo viene utilizzato per raggruppare il <b>software</b> libero e Open Source in un'unica categoria (<b>libero non significa necessariamente GRATUITO</b>). Per essere "libero" il software deve soddisfare quattro vincoli di <b>libertà</b>, eccoli in breve:</p>
