@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "support area"
+AuthUserFile /var/www/passwords/www.progettosl.eu/private
+Require valid-user
